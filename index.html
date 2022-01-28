@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Texto - Challenge Alura Latam & Oracle One</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="titulo">Encriptador de texto</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    
+    <div class="container grid">
+
+      <section class="form box">
+        <!-- Formulario de entrada de mensaje-->
+        <form class="formulario" action="">
+          <p class="aviso" id="aviso">Incluye sólo letras minúsculas y sin acentos, por favor...</p>
+          <label id="label" class="label" for="input-texto"></label>
+          <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" autofocus>
+          <button class="btn btn-encript" type="submit" value="encriptar!" id="btn-encriptar">Encriptar</button>
+          <button class="btn btn-desencript" type="submit" value="desencriptar!" id="btn-desencriptar">Desencriptar</button>
+        </form>
+      </section>
+      <!-- Caja de de salida del mensaje-->
+      <section class="msg box">
+        <h3 class="title-h3" id="">Mensaje procesado:</h3>
+        <textarea class="text-input" type="text" id="textarea" placeholder="Aquí se mostrará el mensaje"></textarea>
+        <button class="btn btn-copy" type="submit" value="copiar" id="btn-copiar">Copiar</button>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="copy">Challenge by Alura Latam and Oracle ONE</p>
+      <p class="legal">Development&copy; by <a href="https://www.linkedin.com/in/fcmateofuentes/">fcmateofuentes </a></p>
+    </div>
+  </footer>
+
+  <script src="js/validador.js"></script>
+  <script src="js/encriptador.js"></script>
+  <script src="js/desencriptador.js"></script>
+  <script src="js/copy.js"></script>
+  <script src="js/alerts.js"></script>
+</body>
+</html>
